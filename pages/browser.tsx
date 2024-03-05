@@ -6,6 +6,7 @@ import DropdownComponent from '@/components/navigation';
 import Diagram from '@/components/diagram';
 import DataLoading from '@/components/dataLoading';
 import TableComponent from '@/components/tableComponent';
+import Graph from '@/components/graph';
 
 const baseURI = process.env.NODE_ENV === 'production'
     ? 'https://your-production-domain.com/'   // replace with your production domain
@@ -45,6 +46,7 @@ function Browser() {
       <div className="central-pane w-4/5 h-full p-8">
         <div id="paper" className="w-full h-full overflow-hidden rounded-lg shadow">
                   <Diagram selectedClass={selectedClass} store={store} setTableData={setTableData}/>
+
         </div>
     </div>
     </div>
